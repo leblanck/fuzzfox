@@ -6,30 +6,23 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://python.org)
 
 
+# FuzzFox
+### Skillshare Video Downloader Made with python
+#### About
+This project is forked and based on the project made by [kallqvist](https://github.com/kallqvist/skillshare-downloader)
 
+This project is intended for offline access to Skillshare videos outside of using their mobile app. **Support your content creators, do NOT use this for piracy!** Please don't be a jerk. Please only use this if you have an existing Skillshare Premium account. 
 
+#### Prerequisites
 
-
-
-# Skillshare video downloader in python
-
-I needed offline access to some skillshare courses I wanted to take while on vacation.
-Video download is only available in the skillshare mobile apps and I didn't want to
-choose between shaky 3G streaming or watching on a tiny mobile screen so I put together a
-quick and dirty video downloader in python.
-
-### Support your content creators, do NOT use this for piracy!
-
-You will need a skillshare premium account to access premium content.
-This script will not handle login for you.
-
-1. Log-in to skillshare in your browser and open up the developer console.
-(cmd-shift-c for chrome on mac)
-
-2. Use it to grab your cookie by typing:
-```
-document.cookie
-```
+1. Skillshare Premium Account
+2. Python3
+3. pip `sudo easy_install pip`
+4. requests `python3 -m pip install requests`
+5. python-slugify `python3 -m pip install pyhon-slugify`
+6. Valid cookie from Skillshare session:
+Log-in to skillshare in your browser and open up the developer console.
+(cmd-shift-c for chrome on mac). Use it to grab your cookie by typing: `document.cookie`
 
 3. Copy-paste cookie from developer console (without " if present) into example script.
 
