@@ -22,9 +22,13 @@ This project is intended for offline access to Skillshare videos outside of usin
 5. python-slugify `python3 -m pip install pyhon-slugify`
 6. Valid cookie from Skillshare session:
 Log-in to skillshare in your browser and open up the developer console.
-(cmd-shift-c for chrome on mac). Use it to grab your cookie by typing: `document.cookie`
+(cmd-shift-c for chrome on mac). Use it to grab your cookie by typing: `document.cookie`. Copy-paste cookie from developer console (without " if present) into example script.
 
-3. Copy-paste cookie from developer console (without " if present) into example script.
+#### Use
+
+To use this script, fill out `example.py` as shown in the Example section below. Execute the script by running `python3 example.py`. 
+
+Downloads will be put into `fuzzfox/code/data/teacherName/classNames`
 
 #### Example:
 ```
@@ -43,7 +47,7 @@ dl.download_course_by_url('https://www.skillshare.com/classes/Art-Fundamentals-i
 # dl.download_course_by_class_id(189505397)
 ```
 
-4. (Optionally) run with docker and docker-compose:
+(Optionally) run with docker and docker-compose:
 ```
 docker-compose build
 docker-compose run --rm ssdl python example.py
